@@ -1,4 +1,4 @@
-# gridsome-use
+# gridsome-site
 
 - Gridsome 是一个免费、开源、基于 Vue.js 构建的框架。
 
@@ -31,3 +31,4 @@ npm config set sharp_libvips_binary_host "https://npm.taobao.org/mirrors/sharp-l
 
 1. Create `.vue` components in the `src/pages` directory to create page routes.
 2. Use `gridsome build` to generate static files in a `/dist` folder
+
