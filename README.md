@@ -2,11 +2,11 @@
 
 - Gridsome 是一个免费、开源、基于 Vue.js 构建的框架。
 
-> [Gridsome 中文网](https://www.gridsome.cn/)
+> [Gridsome](https://gridsome.org/)
 
 ## 安装
 
-[安装链接](https://www.gridsome.cn/docs/#how-to-install)
+[安装链接](https://gridsome.org/docs/#how-to-install)
 
 针对 gridsome 依赖 sharp，安装过慢的问题，可通过使用淘宝镜像方式解决。
 
