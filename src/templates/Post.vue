@@ -38,9 +38,10 @@
     <article>
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            {{ $page.post.content }}
-          </div>
+          <div
+            class="col-lg-8 col-md-10 mx-auto"
+            v-html="mdToHtml($page.post.content)"
+          ></div>
         </div>
       </div>
     </article>
@@ -71,12 +72,22 @@ query ($id: ID!) {
 </page-query>
 
 <script>
+import MarkdownIt from 'markdown-it'
+
+const md = new MarkdownIt()
+
 export default {
   name: 'PostPage',
 
   metaInfo({ $page }) {
     return {
       title: $page.post.title
+    }
+  },
+
+  methods: {
+    mdToHtml(str) {
+      return str ? md.render(str) : ''
     }
   }
 }
