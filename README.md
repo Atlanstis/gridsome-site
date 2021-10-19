@@ -32,3 +32,6 @@ npm config set sharp_libvips_binary_host "https://npm.taobao.org/mirrors/sharp-l
 1. Create `.vue` components in the `src/pages` directory to create page routes.
 2. Use `gridsome build` to generate static files in a `/dist` folder
 
+## 开发说明
+
+1. 访问根目录下 static 目录内资源时，可忽略 static 前缀。例：访问 static 目录下，img 目录下 home-bg.png，直接使用 `/img/home-bg.jpg` 路径即可。
