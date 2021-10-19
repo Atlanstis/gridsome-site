@@ -92,13 +92,13 @@
         </div>
       </div>
     </div>
-
-    <hr />
   </Layout>
 </template>
 
 <script>
 export default {
+  name: 'HomePage',
+
   metaInfo: {
     title: 'Hello, world!'
   }
